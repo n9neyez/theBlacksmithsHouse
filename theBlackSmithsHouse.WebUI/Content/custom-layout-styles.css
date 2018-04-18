@@ -1,0 +1,13 @@
+﻿#custom-navbar {
+    border: 1px solid red;
+}
+
+#title-container {
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-title {
+    /* CSS for The Blacksmith's House title */
+}

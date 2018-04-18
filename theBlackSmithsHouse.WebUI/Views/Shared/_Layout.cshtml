@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @* Link boostrap style sheets *@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/custom-layout-styles.css" rel="stylesheet" />
+    <link href="~/Content/custom-list-styles.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- Navigation goes in here -->
+    <header>
+        <div class="navbar" id="custom-navbar" role="navigation">
+            <div id="title-container">
+                <!-- Logo/Title -->
+                <a class="navbar-brand" id="main-title" href="#">The Blacksmith's House</a>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <div class="row panel">
+        @* Panel to list rarities *@
+        <div id="categories" class="col-xs-3">
+            @Html.Action("RarityMenu", "Rarity")
+        </div>
+
+        <div class="col-xs-8">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+
+
+</body>
+
+</html>

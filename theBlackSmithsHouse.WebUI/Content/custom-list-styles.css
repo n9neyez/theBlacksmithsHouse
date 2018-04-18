@@ -1,0 +1,9 @@
+﻿#price-text-style {
+    color: gold;
+    font-style: italic;
+}
+/* This was a test to see if the PagingHelpers class would be able to use this style -- PASSED
+.pagination-btn {
+    background-color: red;
+}
+*/
