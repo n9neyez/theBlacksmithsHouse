@@ -1,0 +1,17 @@
+﻿@model theBlackSmithsHouse.Domain.Entities.Product
+
+<div class="thumbnail">
+    <h3>
+        <strong>
+            @Model.Name
+        </strong>
+    </h3>
+    <h5>@Model.Rarity</h5>
+    <h3>
+        <span class="pull-right label label-default" id="price-text-style">
+            @Model.Price  gold
+        </span>
+    </h3>
+    @Model.Description
+    <h5>@Model.Type</h5>
+</div>

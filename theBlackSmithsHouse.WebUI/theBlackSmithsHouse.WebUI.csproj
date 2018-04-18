@@ -163,6 +163,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\ProductSummary.cshtml" />
+    <Content Include="Views\Rarity\RarityMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -173,8 +175,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\" />
-    <Folder Include="Views\Nav\" />
-    <Folder Include="Views\Rarity\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\theBlackSmithsHouse.Domain\theBlackSmithsHouse.Domain.csproj">
