@@ -15,8 +15,11 @@ namespace theBlackSmithsHouse.WebUI.Controllers
             repository = repo;
         }
 
-        public PartialViewResult RarityMenu()
-        {               // use Linq query to obtain list of rarities from repository to pass to the view
+        public PartialViewResult RarityMenu(string rarity = null)
+        {
+            ViewBag.SelectedRarity = rarity;
+
+            // use Linq query to obtain list of rarities from repository to pass to the view
             IEnumerable<string> rarities = repository.Products.Select(x => x.Rarity)
                                                               .Distinct()
                                                               .OrderBy(x => x);

@@ -33,7 +33,10 @@ namespace theBlackSmithsHouse.WebUI.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    TotalItems = myrepository.Products.Count()
+                    TotalItems = rarity == null ?
+                                    myrepository.Products.Count() :
+                                    myrepository.Products.Where
+                                        (e => e.Rarity == rarity).Count()
                 },
                 CurrentRarity = rarity // indicate current category
             };

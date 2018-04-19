@@ -6,11 +6,13 @@
 @foreach(var link in Model)
 {
     @Html.RouteLink(link, new
-{
-    controller = "Product",
-    action = "List",
-    rarity = link,
-    page = 1
-},
-new { @class = "btn btn-block btn-default btn-lg"})
+    {
+        controller = "Product",
+        action = "List",
+        rarity = link,
+        page = 1
+    },
+new { @class = "btn btn-block btn-default btn-lg"
+                + (link == ViewBag.SelectedRarity ? " btn-primary" : "")
+    })
 }
